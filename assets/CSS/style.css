@@ -1,0 +1,13 @@
+table {
+    width: 90%;
+    height: 90%;
+  }
+  td {
+    width: 12.5%;
+    position: relative;
+  }
+  td:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+  }
