@@ -12,4 +12,6 @@
 
 ![screenshot](assets/imgs/chess-board-screenshot.jpg)
 
-Contact: Alex Laursen - ajlaursen@aol.com
+* Contact: Alex Laursen - ajlaursen@aol.com
+
+* License: [License](LICENSE)
