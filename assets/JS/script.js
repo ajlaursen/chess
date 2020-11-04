@@ -4,6 +4,58 @@
         // b=bishop
         // k=knight
         // p=pawn
+let whitepieces = [
+    pwa1 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 1,
+        y: 2,
+        type: "pawn",
+    },
+    pwa2 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 2,
+        y: 2,
+        type: "pawn",
+    },
+    pwa3 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 3,
+        y: 2,
+        type: "pawn",
+    },
+    pwa4 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 4,
+        y: 2,
+        type: "pawn",
+    },
+    pwa5 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 5,
+        y: 2,
+        type: "pawn",
+    },
+    pwa6 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 6,
+        y: 2,
+        type: "pawn",
+    },
+    pwa7 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 7,
+        y: 2,
+        type: "pawn",
+    },
+    pwa8 = {
+        imgSource: "assets/imgs/white-pawn.png",
+        x: 8,
+        y: 2,
+        type: "pawn",
+    }
+];
+
+
         class Piece {
             constructor(color, type) {
                 this.color = color;
