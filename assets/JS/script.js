@@ -257,6 +257,12 @@ function populateBoard(array){
     });
 }
 populateBoard(pieces)
+
+
+
+
+
+
         // class Piece {
         //     constructor(color, type) {
         //         this.color = color;
