@@ -1,10 +1,12 @@
-   // K=king
-        // q=queen
-        // r=rook
-        // b=bishop
-        // k=knight
-        // p=pawn
-let whitepieces = [
+// K=king
+// q=queen
+// r=rook
+// b=bishop
+// k=knight
+// p=pawn
+
+
+let pieces = [
     pwa1 = {
         imgSource: "assets/imgs/white-pawn.png",
         color: "white",
@@ -60,10 +62,73 @@ let whitepieces = [
         x: 8,
         y: 2,
         type: "pawn",
+    },
+    pba1 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 1,
+        y: 7,
+        type: "pawn",
+    },
+    pba2 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 2,
+        y: 7,
+        type: "pawn",
+    },
+    pba3 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 3,
+        y: 7,
+        type: "pawn",
+    },
+    pba4 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 4,
+        y: 7,
+        type: "pawn",
+    },
+    pba5 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 5,
+        y: 7,
+        type: "pawn",
+    },
+    pba6 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 6,
+        y: 7,
+        type: "pawn",
+    },
+    pba7 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 7,
+        y: 7,
+        type: "pawn",
+    },
+    pba8 = {
+        imgSource: "assets/imgs/black-pawn.png",
+        color: "black",
+        x: 8,
+        y: 7,
+        type: "pawn",
     }
 ];
 
 
+
+function populateBoard(array){
+    array.forEach(element => {
+       $('#x' + element.x +'y' + element.y).append("<img src=" + element.imgSource + " class=\"img-fluid\">")
+    });
+}
+populateBoard(pieces)
         class Piece {
             constructor(color, type) {
                 this.color = color;
