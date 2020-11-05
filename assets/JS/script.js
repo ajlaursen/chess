@@ -258,10 +258,30 @@ function populateBoard(array){
 }
 populateBoard(pieces)
 
+let whiteChosen = false;
+let whiteLocked = false;
+let blackChosen = true;
+let blackLocked = true;
+let choosenPiece;
+let oldSquare;
+
+// need to make this a function that checkes if it is piece selection or piece placement
 $(".piece").click(function(){
-    
+    oldSquare = $(this).parent() 
+    choosenPiece = $(this).attr("src");
+    console.log(oldSquare);
+
 })
 
+$(".space").click(function(){
+    let spaceX = $(this).attr("x")
+    let spaceY = $(this).attr("y")
+    $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\">")
+    oldSquare.empty()
+    // need to manipulate checkers for white and black piecse.
+
+
+})
 
 
         // class Piece {
