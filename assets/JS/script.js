@@ -253,7 +253,7 @@ let pieces = [
 
 function populateBoard(array){
     array.forEach(element => {
-       $('#x' + element.x +'y' + element.y).append("<img src=" + element.imgSource + " class=\"img-fluid\">")
+       $('#x' + element.x +'y' + element.y).append("<img src=" + element.imgSource + " class=\"img-fluid piece\">")
     });
 }
 populateBoard(pieces)
