@@ -6,65 +6,66 @@
 // p=pawn
 
 
+
 let pieces = [
     pwa2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 1,
         y: 2,
         type: "pawn",
     },
     pwb2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 2,
         y: 2,
         type: "pawn",
     },
     pwc2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 3,
         y: 2,
         type: "pawn",
     },
     pwd2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 4,
         y: 2,
         type: "pawn",
     },
     pwe2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 5,
         y: 2,
         type: "pawn",
     },
     pwf2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 6,
         y: 2,
         type: "pawn",
     },
     pwg2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 7,
         y: 2,
         type: "pawn",
     },
     pwh2 = {
-        imgSource: "assets/imgs/white-pawn.png",
+        imgSource: "assets/imgs/blue_pawn.png",
         color: "white",
         x: 8,
         y: 2,
         type: "pawn",
     },
     kwe1 = {
-        imgSource: "assets/imgs/white-king.png",
+        imgSource: "assets/imgs/blue_king.png",
         color: "white",
         x: 5,
         y: 1,
@@ -72,7 +73,7 @@ let pieces = [
 
     },
     qwd1 = {
-        imgSource: "assets/imgs/white-queen.png",
+        imgSource: "assets/imgs/blue_queen.png",
         color: "white",
         x: 4,
         y: 1,
@@ -80,7 +81,7 @@ let pieces = [
 
     },
     bwc1 = {
-        imgSource: "assets/imgs/white-bishop.png",
+        imgSource: "assets/imgs/blue_bishop.png",
         color: "white",
         x: 3,
         y: 1,
@@ -88,7 +89,7 @@ let pieces = [
 
     },
     bwf1 = {
-        imgSource: "assets/imgs/white-bishop.png",
+        imgSource: "assets/imgs/blue_bishop.png",
         color: "white",
         x: 6,
         y: 1,
@@ -96,7 +97,7 @@ let pieces = [
 
     },
     kwb1 = {
-        imgSource: "assets/imgs/white-knight.png",
+        imgSource: "assets/imgs/blue_knight.png",
         color: "white",
         x: 2,
         y: 1,
@@ -104,7 +105,7 @@ let pieces = [
 
     },
     kwg1 = {
-        imgSource: "assets/imgs/white-knight.png",
+        imgSource: "assets/imgs/blue_knight.png",
         color: "white",
         x: 7,
         y: 1,
@@ -112,7 +113,7 @@ let pieces = [
 
     },
     rwa1 = {
-        imgSource: "assets/imgs/white-rook.png",
+        imgSource: "assets/imgs/blue_rook.png",
         color: "white",
         x: 1,
         y: 1,
@@ -120,7 +121,7 @@ let pieces = [
 
     },
     rwh1 = {
-        imgSource: "assets/imgs/white-rook.png",
+        imgSource: "assets/imgs/blue_rook.png",
         color: "white",
         x: 8,
         y: 1,
@@ -128,63 +129,63 @@ let pieces = [
 
     },
     pba2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 1,
         y: 7,
         type: "pawn",
     },
     pbb2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 2,
         y: 7,
         type: "pawn",
     },
     pbc2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 3,
         y: 7,
         type: "pawn",
     },
     pbd2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 4,
         y: 7,
         type: "pawn",
     },
     pbe2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 5,
         y: 7,
         type: "pawn",
     },
     pbf2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 6,
         y: 7,
         type: "pawn",
     },
     pbg2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 7,
         y: 7,
         type: "pawn",
     },
     pbh2 = {
-        imgSource: "assets/imgs/black-pawn.png",
+        imgSource: "assets/imgs/red_pawn.png",
         color: "black",
         x: 8,
         y: 7,
         type: "pawn",
     },
     kbe1 = {
-        imgSource: "assets/imgs/black-king.png",
+        imgSource: "assets/imgs/red_king.png",
         color: "black",
         x: 5,
         y: 8,
@@ -192,7 +193,7 @@ let pieces = [
 
     },
     qbd1 = {
-        imgSource: "assets/imgs/black-queen.png",
+        imgSource: "assets/imgs/red_queen.png",
         color: "black",
         x: 4,
         y: 8,
@@ -200,7 +201,7 @@ let pieces = [
 
     },
     bbc1 = {
-        imgSource: "assets/imgs/black-bishop.png",
+        imgSource: "assets/imgs/red_bishop.png",
         color: "black",
         x: 3,
         y: 8,
@@ -208,7 +209,7 @@ let pieces = [
 
     },
     bbf1 = {
-        imgSource: "assets/imgs/black-bishop.png",
+        imgSource: "assets/imgs/red_bishop.png",
         color: "black",
         x: 6,
         y: 8,
@@ -216,7 +217,7 @@ let pieces = [
 
     },
     kbb1 = {
-        imgSource: "assets/imgs/black-knight.png",
+        imgSource: "assets/imgs/red_knight.png",
         color: "black",
         x: 2,
         y: 8,
@@ -224,7 +225,7 @@ let pieces = [
 
     },
     kbg1 = {
-        imgSource: "assets/imgs/black-knight.png",
+        imgSource: "assets/imgs/red_knight.png",
         color: "black",
         x: 7,
         y: 8,
@@ -232,7 +233,7 @@ let pieces = [
 
     },
     rba1 = {
-        imgSource: "assets/imgs/black-rook.png",
+        imgSource: "assets/imgs/red_rook.png",
         color: "black",
         x: 1,
         y: 8,
@@ -240,7 +241,7 @@ let pieces = [
 
     },
     rbh1 = {
-        imgSource: "assets/imgs/black-rook.png",
+        imgSource: "assets/imgs/red_rook.png",
         color: "white",
         x: 8,
         y: 8,
@@ -253,10 +254,81 @@ let pieces = [
 
 function populateBoard(array){
     array.forEach(element => {
-       $('#x' + element.x +'y' + element.y).append("<img src=" + element.imgSource + " class=\"img-fluid\">")
+       $('#x' + element.x +'y' + element.y).append("<img src=" + element.imgSource + " class=\"img-fluid piece\" color=\""+element.color+"\">")
     });
 }
 populateBoard(pieces)
+
+let whiteChosen = false;
+let whiteLocked = false;
+let blackChosen = true;
+let blackLocked = true;
+let choosenPiece;
+let pieceColor;
+let oldSquare;
+
+// need to make this a function that checkes if it is piece selection or piece placement
+$(".space").click(function(event){
+    
+    
+    console.log(" blacklock "  +blackLocked,"blackchosen "+ blackChosen)
+    if(whiteLocked === false && whiteChosen === true){
+        console.log("white peice square placement")
+        let spaceX = $(this).attr("x")
+        let spaceY = $(this).attr("y")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" color=\""+pieceColor+ "\">")
+        oldSquare.empty()
+        whiteLocked = true;
+        blackChosen = false;
+        blackLocked = false;
+        console.log(" whitelock "  +whiteLocked,"whitechosen "+ whiteChosen)
+        console.log("blacks turn")
+    }
+    if(blackLocked === false && blackChosen === true){
+        console.log("black piece square placemtn");
+        let spaceX = $(this).attr("x")
+        let spaceY = $(this).attr("y")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\">")
+        oldSquare.empty()
+        blackLocked = true;
+        whiteChosen = false;
+        whiteLocked = false;
+        console.log(" blacklock "  +blackLocked,"blackchosen "+ blackChosen)
+        console.log("whites turn")
+    }
+})
+
+$(".piece").click(function(event){
+    event.stopPropagation();
+    console.log(whiteLocked, whiteChosen)
+    if(whiteChosen === false && whiteLocked === false && $(this).attr("color") === "white"){
+        console.log("white piece clicked")
+        oldSquare = $(this).parent() 
+        choosenPiece = $(this).attr("src");
+        pieceColor = $(this).attr("color");
+        console.log(oldSquare);
+        whiteChosen = true;
+        whiteLocked = false
+    }
+    if(blackChosen === false && blackLocked === false && $(this).attr("color") === "black"){
+        console.log("black piece clicked")
+        oldSquare = $(this).parent() 
+        choosenPiece = $(this).attr("src");
+        pieceColor = $(this).attr("color");
+        console.log(oldSquare);
+        blackChosen = true;
+        blackLocked = false
+    }
+    
+    
+});
+
+    // need to manipulate checkers for white and black piecse.
+
+
+
+
+
         // class Piece {
         //     constructor(color, type) {
         //         this.color = color;
@@ -344,4 +416,3 @@ populateBoard(pieces)
 
         // board = new Board();
         // board.startNewGame();
-

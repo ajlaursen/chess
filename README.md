@@ -8,10 +8,12 @@
 
 * chess game created during coding bootcamp
 
-* Colaborators: Alex Laursen, Chris Doohan, Jorgen Tuck
+* Colaborators: Alex Laursen, Chris Doohan, David MacLaren
 
+* first iteration
 ![screenshot](assets/imgs/chess-board-screenshot.jpg)
-
+* second iteration
+![screenshot](assets/imgs/chess-screenshot.png)
 * Contact: Alex Laursen - ajlaursen@aol.com
 
 * License: [License](LICENSE)
