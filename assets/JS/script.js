@@ -6,6 +6,7 @@
 // p=pawn
 
 
+
 let pieces = [
     pwa2 = {
         imgSource: "assets/imgs/blue_pawn.png",
