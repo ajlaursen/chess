@@ -253,7 +253,7 @@ let pieces = [
 
 function populateBoard(array){
     array.forEach(element => {
-       $('#x' + element.x +'y' + element.y).append("<img src=" + element.imgSource + " class=\"img-fluid piece\">")
+       $('#x' + element.x +'y' + element.y).append("<img src=" + element.imgSource + " class=\"img-fluid piece\" color=\""+element.color+"\">")
     });
 }
 populateBoard(pieces)
@@ -263,25 +263,69 @@ let whiteLocked = false;
 let blackChosen = true;
 let blackLocked = true;
 let choosenPiece;
+let pieceColor;
 let oldSquare;
 
 // need to make this a function that checkes if it is piece selection or piece placement
-$(".piece").click(function(){
-    oldSquare = $(this).parent() 
-    choosenPiece = $(this).attr("src");
-    console.log(oldSquare);
-
+$(".space").click(function(event){
+    
+    
+    console.log(" blacklock "  +blackLocked,"blackchosen "+ blackChosen)
+    if(whiteLocked === false && whiteChosen === true){
+        console.log("white peice square placement")
+        let spaceX = $(this).attr("x")
+        let spaceY = $(this).attr("y")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" color=\""+pieceColor+ "\">")
+        oldSquare.empty()
+        whiteLocked = true;
+        blackChosen = false;
+        blackLocked = false;
+        console.log(" whitelock "  +whiteLocked,"whitechosen "+ whiteChosen)
+        console.log("blacks turn")
+    }
+    if(blackLocked === false && blackChosen === true){
+        console.log("black piece square placemtn");
+        let spaceX = $(this).attr("x")
+        let spaceY = $(this).attr("y")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\">")
+        oldSquare.empty()
+        blackLocked = true;
+        whiteChosen = false;
+        whiteLocked = false;
+        console.log(" blacklock "  +blackLocked,"blackchosen "+ blackChosen)
+        console.log("whites turn")
+    }
 })
 
-$(".space").click(function(){
-    let spaceX = $(this).attr("x")
-    let spaceY = $(this).attr("y")
-    $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\">")
-    oldSquare.empty()
+$(".piece").click(function(event){
+    event.stopPropagation();
+    console.log(whiteLocked, whiteChosen)
+    if(whiteChosen === false && whiteLocked === false && $(this).attr("color") === "white"){
+        console.log("white piece clicked")
+        oldSquare = $(this).parent() 
+        choosenPiece = $(this).attr("src");
+        pieceColor = $(this).attr("color");
+        console.log(oldSquare);
+        whiteChosen = true;
+        whiteLocked = false
+    }
+    if(blackChosen === false && blackLocked === false && $(this).attr("color") === "black"){
+        console.log("black piece clicked")
+        oldSquare = $(this).parent() 
+        choosenPiece = $(this).attr("src");
+        pieceColor = $(this).attr("color");
+        console.log(oldSquare);
+        blackChosen = true;
+        blackLocked = false
+    }
+    
+    
+});
+
     // need to manipulate checkers for white and black piecse.
 
 
-})
+
 
 
         // class Piece {
