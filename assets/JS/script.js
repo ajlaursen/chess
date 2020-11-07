@@ -265,6 +265,7 @@ let blackChosen = true;
 let blackLocked = true;
 let choosenPiece;
 let pieceColor;
+let pieceType;
 let oldSquare;
 
 // need to make this a function that checkes if it is piece selection or piece placement
@@ -276,7 +277,7 @@ $(".space").click(function(event){
         console.log("white peice square placement")
         let spaceX = $(this).attr("x")
         let spaceY = $(this).attr("y")
-        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" color=\""+pieceColor+ "\" type=\""+element.type+"\">")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" color=\""+pieceColor+ "\" type=\""+pieceType+"\">")
         oldSquare.empty()
         whiteLocked = true;
         blackChosen = false;
@@ -288,7 +289,7 @@ $(".space").click(function(event){
         console.log("black piece square placemtn");
         let spaceX = $(this).attr("x")
         let spaceY = $(this).attr("y")
-        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" type=\""+element.type+"\">")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" type=\""+pieceType+"\">")
         oldSquare.empty()
         blackLocked = true;
         whiteChosen = false;
@@ -306,6 +307,7 @@ $(".piece").click(function(event){
         oldSquare = $(this).parent() 
         choosenPiece = $(this).attr("src");
         pieceColor = $(this).attr("color");
+        pieceType = $(this).attr("type");
         console.log(oldSquare);
         whiteChosen = true;
         whiteLocked = false
@@ -315,6 +317,7 @@ $(".piece").click(function(event){
         oldSquare = $(this).parent() 
         choosenPiece = $(this).attr("src");
         pieceColor = $(this).attr("color");
+        pieceType = $(this).attr("type");
         console.log(oldSquare);
         blackChosen = true;
         blackLocked = false
