@@ -276,7 +276,7 @@ $(".space").click(function(event){
         console.log("white peice square placement")
         let spaceX = $(this).attr("x")
         let spaceY = $(this).attr("y")
-        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" color=\""+pieceColor+ "\">")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" color=\""+pieceColor+ "\" type=\""+element.type+"\">")
         oldSquare.empty()
         whiteLocked = true;
         blackChosen = false;
@@ -288,7 +288,7 @@ $(".space").click(function(event){
         console.log("black piece square placemtn");
         let spaceX = $(this).attr("x")
         let spaceY = $(this).attr("y")
-        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\">")
+        $('#x' + spaceX +'y' + spaceY).append("<img src=" + choosenPiece + " class=\"img-fluid piece\" type=\""+element.type+"\">")
         oldSquare.empty()
         blackLocked = true;
         whiteChosen = false;
